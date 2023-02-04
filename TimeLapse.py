@@ -32,7 +32,7 @@ class TimeLapse(Script):
                     "default_value": 700,
                     "minimum_value": 0,
                     "unit": "ms"
-                },
+                }, 
                 "park_print_head":
                 {
                     "label": "Park Print Head",
