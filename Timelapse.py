@@ -53,7 +53,7 @@ def shutdown():                             # Notification d'extinction via log,
     log2file(" >  Extinction dans 60 sec.",True,"no_entry")
     if OP_TIMELAPSE: RPi.GPIO.output(BOUTTON_PIN, RPi.GPIO.HIGH) # Si nous sommes en Timelapse uniquement, allumage de la LED
     camera.stop()
-    camera.close()
+    camera.close() 
     time.sleep(60)
     os.system("sudo shutdown -h now 'Arret du systeme par script'") # Extinction par commande shutdown
 def MyTimeLapse(tlminutes):                 # Fonction principale pour le Timelapse (argument = temps en minutes)
